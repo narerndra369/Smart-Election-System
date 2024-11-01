@@ -136,7 +136,7 @@ def givevote(request):
     knn = KNeighborsClassifier(n_neighbors=5)
     knn.fit(FACES, LABELS)
     vote_options = {'1': 'BJP', '2': 'CONGRESS', '3': 'AAP', '4': 'NOTA'}
-    imgBackground = cv2.imread(r"C:\Users\nare6\OneDrive\Desktop\SmartElectionSystem\smartelection\Assets\background.png")
+    imgBackground = cv2.imread(r".\smartelection\Assets\background.png")
 
     while True:
         ret, frame = video.read()
